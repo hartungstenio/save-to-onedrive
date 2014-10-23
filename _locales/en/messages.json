@@ -1,0 +1,15 @@
+{
+  "extName" : {
+    "message" : "Save picture to OneDrive",
+    "description" : "Extension's name"
+  },
+  "extDescription" : {
+    "message" : "A simple extension to save pictures to your OneDrive",
+    "description" : "Extension's description"
+  },
+  
+  "button_title" : {
+    "message" : "Save picture to OneDrive",
+    "description" : "Button's title"
+  }
+}
