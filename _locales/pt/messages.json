@@ -1,0 +1,15 @@
+{
+  "extName" : {
+    "message" : "Salvar imagem no OneDrive",
+    "description" : "O nome da extensão"
+  },
+  "extDescription" : {
+    "message" : "Extensão para salvar imagens para seu OneDrive",
+    "description" : "A descrição da extensão"
+  },
+  
+  "button_title" : {
+    "message" : "Salvar imagem no OneDrive",
+    "description" : "Título do botão"
+  }
+}
