@@ -4,8 +4,9 @@
   "default_locale" : "en",
   
   "background" : {
-    "scripts" : ["save_1drv.js"]
+    "scripts" : ["background.html"]
   },
+  "options_page": "options.html",
   
   "name" : "__MSG_extName__",
   "description" : "__MSG_extDescription__",
@@ -13,13 +14,14 @@
   "author": "Christian Hartung",
   
   "icons" : {
-    "16" : "save_1drv-16.png",
-    "32" : "save_1drv-32.png",
-    "48" : "save_1drv-48.png",
-    "128" : "save_1drv-128.png"
+    "16" : "icons/save_1drv-16.png",
+    "32" : "icons/save_1drv-32.png",
+    "48" : "icons/save_1drv-48.png",
+    "128" : "icons/save_1drv-128.png"
   },
   
   "permissions" : [
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ]
 }
