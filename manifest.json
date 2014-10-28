@@ -4,10 +4,13 @@
   "default_locale" : "en",
   
   "background" : {
-    "scripts" : ["background.html"]
+    "scripts" : [
+      "js/jquery.js",
+      "js/OneDrivr.js",
+      "js/background.js"
+    ]
   },
-  "options_page": "options.html",
-  
+
   "name" : "__MSG_extName__",
   "description" : "__MSG_extDescription__",
   
@@ -22,6 +25,12 @@
   
   "permissions" : [
     "contextMenus",
-    "storage"
-  ]
+    "storage",
+    "https://apis.live.net/"
+  ],
+  
+  "content_scripts" : [{
+    "matches" : ["https://login.live.com/oauth20_desktop.srf*"],
+    "js" : ["js/jquery.js", "js/check_auth.js"]
+  }]
 }

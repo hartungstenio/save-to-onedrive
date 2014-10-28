@@ -2546,7 +2546,7 @@
 				d = n + (j - c) / 2;
 				e = o + (h - b) / 2
 			}
-			var m = ["width=" + c, "height=" + b, "top=" + e, "left=" + d, "status=no", "resizable=yes", "toolbar=no", "menubar=no", "scrollbars=yes"],
+			var m = ["width=" + c, "height=" + b, "top=" + e, "left=" + d, "status=yes", "resizable=yes", "toolbar=yes", "menubar=yes", "scrollbars=yes"],
 			g = window.open(p, "oauth", m.join(","));
 			g.focus();
 			return g
