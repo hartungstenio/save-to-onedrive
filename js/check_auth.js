@@ -14,12 +14,12 @@ function getURIParameter(param, asArray) {
   }, []);
 }
 
-$(document).ready(function() {
-  var code = getURIParameter("code");
-  
-  if(code !== "undefined") {
-    chrome.runtime.sendMessage({ auth_code : code }, function(response) {
-      // a janela será fechada, então não faz nada
-    });
-  }
-});
+var code = getURIParameter("code");
+
+console.log('aijdnbaikdna');
+
+if(code !== "undefined") {
+  chrome.runtime.sendMessage({ auth_code : code }, function(response) {
+    // a janela será fechada, então não faz nada
+  });
+}

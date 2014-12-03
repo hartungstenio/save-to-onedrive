@@ -5,8 +5,7 @@
   
   "background" : {
     "scripts" : [
-      "js/jquery.js",
-      "js/OneDrivr.js",
+      "js/OneDrive.js",
       "js/background.js"
     ]
   },
@@ -26,11 +25,12 @@
   "permissions" : [
     "contextMenus",
     "storage",
-    "https://apis.live.net/"
+    "https://apis.live.net/",
+    "http://*/*", "https://*/*"
   ],
   
   "content_scripts" : [{
     "matches" : ["https://login.live.com/oauth20_desktop.srf*"],
-    "js" : ["js/jquery.js", "js/check_auth.js"]
+    "js" : ["js/check_auth.js"]
   }]
 }
