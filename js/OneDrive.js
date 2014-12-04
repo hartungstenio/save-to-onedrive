@@ -37,7 +37,9 @@ OneDrive.prototype.put = function(resource, content, replace, success, error) {
   xhr.send(content);
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      success(xhr.responseText);
+      if(success) {
+        success(xhr.responseText);
+      }
     }
   };
 }
