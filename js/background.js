@@ -82,11 +82,16 @@ var Ext = Ext || {};
     var bin = getPng(data);
     
     var filename = this.src.substring(this.src.lastIndexOf('/')+1);
-    filename = filename.substring(0, filename.lastIndexOf('.')) + '.png';
+    filename = filename.substring(0, filename.lastIndexOf('.'));
     
-    onedrive.takePicture(filename, bin, function(data) {
-      console.log(data);
-    });
+    if(filename == '') {
+      var d = new Date();
+      filename = d.getFullYear() + '-' + d.getMonth() + '-' + d.getDate();
+    }
+
+    filename = filename + '.png';
+    
+    onedrive.takePicture(filename, bin);
   }
   
   function sendToOneDrive(info, tab) {
